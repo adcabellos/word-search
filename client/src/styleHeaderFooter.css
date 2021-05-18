@@ -1,0 +1,93 @@
+@media only screen and (max-width: 768px) {
+    
+    .logo {
+       max-width: 7.5rem;
+       
+       
+    }
+    .cajaTituloHeader {
+    display: flex;
+    text-align: start;
+    margin-left: 1rem;
+    
+    }
+
+    .tituloHeader {
+        font-family: "Canela","Times","Times New Roman",serif;
+        font-size: 1.30rem;
+        text-decoration: underline;
+        letter-spacing: 0.035rem;
+        font-weight: 300;
+        color: #616676;
+        
+    }
+    #footerStyle {
+        
+        display: flex;
+        justify-content: space-between;
+        color: #616676;
+        align-items: flex-end;
+        text-align: end;
+        margin:  0 2rem;
+        height: 10%;
+        
+    }
+
+    #namesFooter {
+        font-size: 0.5rem;
+    }
+
+    .linea {
+        color: #616676;
+    }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .logo {
+        max-width: 7.5rem;
+        /* margin: 1rem; */
+        
+     }
+     .cajaTituloHeader {
+     display: flex;
+     text-align: start;
+     margin-left: 1rem;
+     
+     }
+ 
+     .tituloHeader {
+        font-family: "Canela","Times","Times New Roman",serif;
+        font-size: 1.30rem;
+        text-decoration: underline;
+        letter-spacing: 0.035rem;
+        font-weight: 300;
+        color: #616676;
+         
+     }
+     #footerStyle {
+         
+         display: flex;
+         justify-content: space-around;
+         color: #616676;
+         align-items: flex-end;
+         text-align: end;
+         padding-top: 1rem;
+         
+         
+     }
+ 
+     #namesFooter {
+         font-size: 0.5rem;
+     }
+ 
+     .linea {
+         color: #616676;
+     }
+ 
+
+}

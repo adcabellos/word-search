@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+* {
+  user-select: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .sopa-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 167px);
+    color: black;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    background-color: white;
+    border: 0.5px solid black;
+    box-shadow: 2px 10px 8px #262727;
+    /* max-width: 60vh; */
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .grid-item {
+    background-color: #fdfcfc;
+    border: 0.1px solid black;
+    font-family: RobotoMono;
+    color: rgb(36, 35, 35);
+    font-size: 20px;
+    text-align: center;
+    padding: 2px;
+    cursor: pointer;
+  }
+  .grid-item:hover {
+    background-color: #f3ecec;
+  }
+  .grid-item-green {
+    background-color: rgb(0, 163, 173);
+    border: 2px solid #28e003;
+    border: 0.1px solid #008080;
+    font-family: RobotoMono;
+    color: rgb(36, 35, 35);
+    font-size: 20px;
+    text-align: center;
+    padding: 2px;
+    pointer-events: none;
+    font-weight: bolder;
+  }
+  .grid-item-yellow {
+    background-color: #fdc30296;
+    border: 0.1px solid #008080;
+    font-family: RobotoMono;
+    color: rgb(36, 35, 35);
+    font-size: 20px;
+    text-align: center;
+    padding: 2px;
+    cursor: pointer;
+  }
+  .palabra {
+    color: red;
+    display: flex;
+  }
+
+  #palabra {
+    color: red;
+  }
+  .listado-palabras {
+    border-radius: 1rem;
+    padding: 0.3rem;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    border: 0.1rem solid grey;
+    color: rgb(20, 20, 20);
+    margin: 0.3rem;
+  }
+  .titulo-buscar-palabras {
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    font-size: larger;
+  }
+
+  .palabras-buscar-div{
+    margin: 0.5rem;
+  }
+  .listaPalabras {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: center; */
+  }
+  #botonAceptarPalabras {
+    margin-bottom: 1rem;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  
+  .countdown {
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  #pausa {
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+
+  #pausa:hover{
+    background-color: white;
+  }
+
+  .countdownDiv {
+    background-color: black;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #mensaje-tiempo {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  #emailUsuario, #passUsuario {
+    padding: 1px 2px;
+    font-size: 1.25rem;
+    line-height: 1.7;
+    font-weight: 200;
+    border: 0;
+    outline: none;
+    border-bottom: solid 1px #9B9B9B;
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+    min-width: 23.72881%;
+    height: 4rem;
+    transition: height 0.5s ease-in-out;
+    display: flex;
+  }
+  .tituloLogin {
+    font-family: "Canela", "Times", "Times New Roman", serif;
+    font-size: 4rem;
+    letter-spacing: 0.035rem;
+    font-weight: 300;
+  }
+  #iniciosesion {
+    color: #363636;
+    background: #efefef;
+    border: solid 1px #efefef;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+  #login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 167px);
+  }
+  #iniciosesion {
+    cursor: pointer;
+    border: 1px solid #9B9B9B;
+  }
+  #iniciosesion:hover {
+    border: 1px solid black;
+  }
+  #adminContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: calc(100vh - 167px);
+  }
+  .admin-title {
+    font-family: "Canela", "Times", "Times New Roman", serif;
+    font-size: 18px;
+    letter-spacing: 0.035rem;
+    font-weight: 500;
+  }
+  input {
+    margin-bottom: 0.5rem;
+  }
+  .admin-button {
+    background-color: black;
+    color: white;
+    border-radius: 0.2rem;
+  }
+  .admin-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  .boton-sopa {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+  }
+  .boton-sopa:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+  }
+
+
+
+}
+
+@media only screen and (min-width: 768px) {
+  .sopa-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vh;
+    color: rgb(0, 0, 0);
+    min-height: calc(100vh - 210px);
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    background-color: #f3ecec;
+    border: 2px solid #262727;
+    box-shadow: 2px 10px 8px #262727;
+    max-width: 60%;
+    margin: auto;
+    
+  }
+
+
+  .grid-item {
+    background-color: #f3ecec;
+    border: 0.1px solid #262727;
+    font-family: RobotoMono;
+    color: rgb(36, 35, 35);
+    font-size: 36px;
+    text-align: center;
+    padding: 2px;
+    line-height: 100%;
+    display: block;
+    cursor: pointer;
+  }
+  .grid-item:hover {
+    background-color: #e6e3e3;
+  }
+  .grid-item-green {
+    background-color: rgb(0, 163, 172);
+    border: 0.1px solid #008080;
+    font-family: RobotoMono;
+    color: rgb(36, 35, 35);
+    font-size: 36px;
+    text-align: center;
+    padding: 2px;
+    pointer-events: none;
+    font-weight: bolder;
+    display: block;
+  }
+  .grid-item-yellow {
+    background-color: #fdc30296;
+    border: 0.1px solid #008080;
+    font-family: RobotoMono;
+    color: rgb(36, 35, 35);
+    font-size: 36px;
+    text-align: center;
+    padding: 2px;
+    cursor: pointer;
+    display: block;
+  }
+  #emailUsuario, #passUsuario {
+    padding: 1px 2px;
+    font-size: 1.25rem;
+    line-height: 1.7;
+    font-weight: 200;
+    /* width: 100%;  */
+    border: 0;
+    outline: none;
+    border-bottom: solid 1px #9B9B9B;
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+    min-width: 23.72881%;
+    height: 4rem;
+    transition: height 0.5s ease-in-out;
+    display: flex;
+  }
+  .tituloLogin {
+    font-family: "Canela", "Times", "Times New Roman", serif;
+    font-size: 4rem;
+    letter-spacing: 0.035rem;
+    font-weight: 300;
+  }
+  #iniciosesion {
+    color: #363636;
+    background: #efefef;
+    border: solid 1px #efefef;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+  .listado-palabras {
+    border-radius: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    border: 0.1rem solid grey;
+    color: rgb(20, 20, 20);
+    background-color: white;
+    margin: 1rem;
+  }
+  .titulo-buscar-palabras {
+    font-size: x-large;
+    margin: 2rem;
+    text-align: center;
+    text-decoration: underline;
+
+  }
+
+  .countdown {
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  #pausa {
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+
+  #pausa:hover{
+    background-color: white;
+  }
+  .countdownDiv {
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #mensaje-tiempo {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .palabras-buscar-div{
+    margin: 2rem;
+    padding: 1rem;
+  }
+  .listaPalabras {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+
+  #login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 210px);
+  }
+  #iniciosesion {
+    cursor: pointer;
+  }
+  #iniciosesion:hover {
+    border: 1px solid #9B9B9B;
+  }
+  #adminContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 210px);
+    
+  }
+  .admin-title {
+    font-family: "Canela", "Times", "Times New Roman", serif;
+    font-size: 24px;
+    letter-spacing: 0.035rem;
+    font-weight: 300;
+  }
+  input {
+    margin-bottom: 0.5rem;
+  }
+  .boton-sopa {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+  }
+  .boton-sopa:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+
+  }
+}
